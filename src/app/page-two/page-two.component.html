@@ -1,0 +1,29 @@
+<div style=" width: 415px;text-align: center; margin-top: 20px;">
+  <div>
+    {{customData | json}}
+  </div>
+</div>
+
+<div class="toolbox-height">
+  <mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile>
+      <div class="small-box" [ngStyle]="{background: customData.presetOne}"></div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="small-box" [ngStyle]="{background: customData.presetTwo}"></div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="small-box" [ngStyle]="{background: customData.presetThree}"></div>
+    </mat-grid-tile>
+
+    <mat-grid-tile><input type="color" [(ngModel)]="customData.presetOne" /></mat-grid-tile>
+    <mat-grid-tile><input type="color" [(ngModel)]="customData.presetTwo"  /></mat-grid-tile>
+    <mat-grid-tile><input type="color" [(ngModel)]="customData.presetThree" /></mat-grid-tile>
+
+  </mat-grid-list>
+</div>
+
+<div>
+  <button class="navigate-button" mat-button (click)="navBack()">Navigate to page one</button>
+  <button class="navigate-button" mat-button (click)="saveAndContinue()">Navigate to page three</button>
+</div>

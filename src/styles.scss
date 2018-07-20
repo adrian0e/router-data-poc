@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body{
+  margin: 0;
+}
+
+
+.align-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.navigate-button{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-right: 15px !important;
+}
+
+.toolbox-height{
+  height: 200px;
+  padding: 20px;
+}
+
+.small-box{
+  width: 150px;
+  height: 150px;
+}
+
+.active{
+  background: #c2c2c2;
+}
+
+
